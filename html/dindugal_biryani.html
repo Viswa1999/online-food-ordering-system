@@ -1,0 +1,238 @@
+<html>
+<head>
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/food_page.css">
+	<script>
+      function validateForm()
+      {
+        var name=document.myform.name.value;
+        var email=document.myform.email.value;
+		var message=document.myform.message.value;
+        var alphaexp=/^[a-zA-Z\s]+$/;
+        var mailExp = /^([a-z0-9_]+)@([a-z]+).([a-z]{2,5})$/;
+        if (!name.match(alphaexp))
+        {
+          alert("Enter the Name");
+          return false;
+        }
+        if (!email.match(mailExp))
+        {
+          alert("Enter correct email");
+          return false;
+        }
+		if (!message)
+		{
+		  alert("Leave a message");
+		  return false;
+		}
+		alert("Your message is submitted")
+      }
+	  </script>
+</head>
+<body>
+<div class="blog-single gray-bg">
+        <div class="container">
+		<nav class="navbar navbar-expand-lg navbar bg" style="font-family: Brush Script MT; text-align:center;font-size: 55px; color: lightsalmon;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../images/navbar.jpg" alt="" width="100px" height="70" class="d-inline-block align-top" style="background-color: blue;"></img>
+          </a>
+          Ethnic foods and export
+          <div class="collapse navbar-collapse" id="navbarNav"  style="float: right; width: 430px; font-size: 100%; display: inline; padding-left: 70px;">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="btn btn-outline-success" href="Home page.html" role="button" style="padding: 5px; font-size: 20px;">Home</a>&nbsp;
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-outline-warning"role="button" href="districts.html" tabindex="-1" style="padding: 5px; font-size: 20px;">Districts</a>&nbsp;
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-outline-danger" role="button" href="joinus.html" tabindex="-1" style="padding: 5px; font-size: 20px;">Join Us</a>&nbsp;
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-outline-dark" role="button" href="contactus.html" tabindex="-1" style="padding: 5px; font-size: 20px;">Contacts Us</a>&nbsp;
+              </li>
+            </ul>
+          </div>
+        </div>
+        </nav>
+            <div class="row align-items-start">
+                <div class="col-lg-8 m-15px-tb">
+                    <article class="article">
+                        <div class="article-img">
+                            <img src="../images/image1.jpg" title="briyani" alt="Thalapakkati">
+                        </div>
+                        <div class="article-title">
+                            <h6><a href="#">Dindugal</a></h6>
+                            <h2>The Delicious Treat of Dinugal Famous Thalapakkati </h2>
+                            <div class="media">
+                                <div class="avatar">
+                                    <img src="../images/profile1.jpg" title="Profile1" alt="pranesh">
+                                </div>
+                                <div class="media-body">
+                                    <label>Pranesh Shiva</label>
+                                    <span>19 FEB 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-content">
+                            <p>The Thalappakatti Biriyani Hotel’s roots can be traced all the way back to 1957. Founded by Mr. Nagasamy Naidu under the name Anandha Vilas Biriyani Hotel in Dindigul. </p>
+                            <p>He always wore a turban called THALAPA(a traditional head dress), which over the years became synonymous with his brand and cooking styles…</p>
+                            <h4>What is the Special Here?</h4>
+                            <p>The Great South Indian cinema Legend Sivaji Ganesan who on visiting his farm house at soorakottai would always stop at Dindigul Thalappakatti Biriyani without fail.Politicians, former Chief Ministers of South India and South Indian cinema legends have all experienced the flavour of Thalappakatti Biriyani. </p>
+                            <blockquote>
+                                <p>Thalappakatti Biriyani has been delighting people from the rich to the poor for the last 50 years and the journey goes on!!!</p>
+                                <p class="blockquote-footer">Mr. Nagasamy Naidu <cite title="Source Title"> (Their Website) </cite></p>
+                            </blockquote>
+                            <p>The unswerving nature and mouthwatering taste of Thalappakatti Biriyani can be attributed to the fact that all the ingredients were prepared by Thalappakatti Naidu, himself and took great care in doing so. He also prepared a palatable dish know as “Dalcha” (a useful combination dish with Biriyani) by making use of mutton bones and adding vegetables like brinjals, potato, thoor and dhal to it. Despite its roots going back 50 years, his cookery style and secrets passed down to his family members are followed strictly meticulously and thereby have ensured that the “Thalappakatti Biriyani” taste remains unchanged.</p>
+                        </div>
+                        <div class="nav tag-cloud">
+                            <a href="madurai_idiyappam.html">Madurai</a>
+                            <a href="salem_thattu.html">Salem</a>
+                            <a href="trichy_manaparai.html">Trichy</a>
+                            <a href="coimbatore_banana.html">Coimbatore</a>
+                            <a href="trichy_manaparai.html">Trichy</a>
+                        </div>
+                    </article>
+                    <div class="contact-form article-comment">
+                        <h4>Leave a Reply</h4>
+                        <form id="form"  name="myform" onsubmit="return validateForm()" class="needs-validation" method="POST" novalidate>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input name="Name" id="name" placeholder="Name *" class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input name="Email" id="email" placeholder="Email *" class="form-control" type="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea name="message" id="message" placeholder="Your message *" rows="4" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="send">
+                                        <button class="px-btn theme"><span>Submit</span> <i class="arrow"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 m-15px-tb blog-aside">
+                    <!-- Author -->
+                    <div class="widget widget-author">
+                        <div class="widget-title">
+                            <h3>Author</h3>
+                        </div>
+                        <div class="widget-body">
+                            <div class="media align-items-center">
+                                <div class="avatar">
+                                    <img src="../images/profile1.jpg" title="Profile1" alt="pranesh">
+                                </div>
+                                <div class="media-body">
+                                    <h6>Hello, I'm<br> Pranesh Shiva</h6>
+                                </div>
+                            </div>
+                            <p>As a food lover I enable em' to be tastiful in my words for the readers here..</p>
+                        </div>
+                    </div>
+                    <!-- End Author -->
+                    
+                    <!-- Latest Post -->
+                    <div class="widget widget-latest-post">
+                        <div class="widget-title">
+                            <h3>Latest Post</h3>
+                        </div>
+                        <div class="widget-body">
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="#">Anjappar Attukal Soup and its origins !!!</a></h5>
+                                    </div>
+                                    <div class="lpa-meta">
+                                        <a class="name" href="#">
+                                            Pranesh Shiva
+                                        </a>
+                                        <a class="date" href="#">
+                                            18 FEB 2021
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="lpa-right">
+                                    <a href="#">
+                                        <img src="../images/image1.jpg" title="mutton Choupusey" alt="mutton">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="#">Delicious Divine Deepening of Mutton Chopusey</a></h5>
+                                    </div>
+                                    <div class="lpa-meta">
+                                        <a class="name" href="#">
+                                            Viswa Prasad
+                                        </a>
+                                        <a class="date" href="#">
+                                            17 FEB 2021
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="lpa-right">
+                                    <a href="#">
+                                        <img src="../images/image1.jpg" title="soup" alt="Anjappar mutton soup">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="#">The third meal of a day !!</a></h5>
+                                    </div>
+                                    <div class="lpa-meta">
+                                        <a class="name" href="#">
+                                            Viswa Prasad
+                                        </a>
+                                        <a class="date" href="#">
+                                            20 FEB 2021
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="lpa-right">
+                                    <a href="#">
+                                        <img src="../images/image1.jpg" title="third meal" alt="third meal">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Latest Post -->
+                    <!-- widget Tags -->
+                    <div class="widget widget-tags">
+                        <div class="widget-title">
+                            <h3>Latest Tags</h3>
+                        </div>
+                        <div class="widget-body">
+                            <div class="nav tag-cloud">
+                                <a href="#">Dindugal</a>
+								<a href="#">Coimbatore</a>
+								<a href="#">Chennai</a>
+								<a href="#">Thiruvallur</a>
+								<a href="#">Trichy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End widget Tags -->
+                </div>
+            </div>
+        </div>
+    </div>
+	        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+	</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          .bg{
+            background-color: goldenrod;
+          }
+        .blog-footer {
+                padding: 15px;
+                color: #999;
+                text-align: center;
+                background-color: rgb(172, 170, 170);
+                border-top: .05rem solid #e5e5e5;
+        }
+        .blog-footer p:last-child {
+        margin-bottom: 0;
+        }
+        .list-group a.list-group-item:hover{
+          color: brown;
+        }
+        .card {
+        box-shadow: 30px 30px 30px 30px rgba(12, 0, 0, 0.26);
+        transition:0.5s;
+        cursor:pointer; 
+        transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+        }
+        .card-body{
+          transition:1s;
+          cursor:pointer;
+        }
+        </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <title>Home Page</title>
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-lg navbar bg-info" style="font-family: Brush Script MT; text-align:center;font-size: 55px;padding-left: 90px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../images/navbar.jpg" alt="" width="100px" height="70" class="d-inline-block align-top" style="background-color: blue;"></img>
+      </a>
+      Ethnic foods
+      <div class="collapse navbar-collapse" id="navbarNav"  style="float: right; width: 430px; font-size: 100%; display: inline; padding-left: 70px;">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="btn btn-outline-success" href="#Home page.html" role="button" style="padding: 5px; font-size: 20px;">Home</a>&nbsp;
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-warning"role="button" href="districts.html" tabindex="-1" style="padding: 5px; font-size: 20px;">Districts</a>&nbsp;
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-danger" role="button" href="joinus.html" tabindex="-1" style="padding: 5px; font-size: 20px;">Join Us</a>&nbsp;
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-dark" role="button" href="contactus.html" tabindex="-1" style="padding: 5px; font-size: 20px;">Contacts Us</a>&nbsp;
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+    <div class="bg">
+    <div class="row">
+        <h3>Delicious and yummy ...</h3>
+        <div class="col-2"></div>
+        <div class="col-8">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="../images/idly.jpg" class="d-block" style="width: 100%; height: 500px;" alt="...">
+              <div class="carousel-caption d-none d-md-block" style="color: darkred; font-size: 40px;">
+                  <h5>IDLY</h5>
+                  <p><b>Startup for the day.</b></p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="../images/dosa.jpg" class="d-block" style="width: 100%; height: 500px;" alt="...">
+              <div class="carousel-caption d-none d-md-block" style="color: darkorange; font-size: 40px;">
+                  <h5>DOSA</h5>
+                  <p><b>The breakfast you like the most</b></p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="../images/fullmeals.jpg" class="d-block" style="width: 100%; height: 500px;" alt="...">
+              <div class="carousel-caption d-none d-md-block" style="font-size: 40px; color: darksalmon;">
+                  <h5>FULL MEALS</h5>
+                  <p><b>The Legend of all time</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+     </div>
+    </div>
+    <div class="container-fluid" style="background-image: url(../images/foodbg.jpg); background-repeat: no-repeat; background-size: 140%;">
+    <div class="row">
+        <h5 style="color: lightgray;"><br>DISTRICTS</h5>
+        <div class="col-2">
+        <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action" style="background-color: greenyellow;">COIMBATORE</a>
+        <a href="#" class="list-group-item list-group-item-action" style="background-color: greenyellow;">MADURAI</a>
+        <a href="#" class="list-group-item list-group-item-action" style="background-color: greenyellow;">THIRUNELVELI</a>
+        <a href="#" class="list-group-item list-group-item-action" style="background-color: greenyellow;">THIRUCHIRAPALLI</a><br>
+        <button type="button" class="btn btn-primary">Click here to see more Districts</button><br>
+        <h5>TOP ETHNIC FOODS</h5>
+        <a href="#" class="list-group-item list-group-item-action" style="background-color: greenyellow;">BUN PAROTTA</a>
+        <a href="#" class="list-group-item list-group-item-action" style="background-color: greenyellow;">HALWA</a>
+        <a href="#" class="list-group-item list-group-item-action" style="background-color: greenyellow;">GROUNDNUT CHIKKI</a>
+        <a href="#" class="list-group-item list-group-item-action" style="background-color: greenyellow;">AMBUR BIRIYANI</a><br>
+        <button type="button" class="btn btn-danger">Click here to see more foods</button><br>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card flex align-start mt-40 mb-20 " style="background-color: lightcyan; font-family: fangsong; padding: 50px;">
+          <div class="card-body" class="shadow p-3 mb-5 bg-white rounded">
+            Ethnic food is food where the ingredients, or the way they are cooked are peculiar to a particular ethnic, cultural or national group, and are associated with that group even when cooked and eaten by others.<br>
+            <center><img src="../images/plate.jpg" class="img-thumbnail" style="width: 280px; height: 200px;"></center>
+          </div>
+        </div>
+        </div>
+        <div class="col-4" style="padding-left: 5%;">
+          <img src="../images/foodquote.jpg" class="img-thumbnail" style="width: 80%; height: 70%; " alt="...">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="card"  style="background-color: rgb(158, 224, 224); font-family: fantasy; padding: 13px;">
+              <div class="card-body" class="shadow p-3 mb-5 bg-white rounded">
+                Food is any substance consumed to provide nutritional support for an organism. Food is usually of plant, animal or fungal origin, and contains essential nutrients, such as carbohydrates, fats, proteins, vitamins, or minerals.
+                <center><img src="../images/wikipedia.jpg" class="img-thumbnail" style="width: 320px; height: 260px;"></center>
+              </div>
+              </div>
+        </div>
+              <div class="col">
+                <div class="card"  style="background-color: rgb(158, 224, 224); font-family: cursive; padding: 18px;">
+                  <div class="card-body" class="shadow p-3 mb-5 bg-white rounded">
+                    "Virundhu" refers to the core elements of Tamil cuisine offered to the guests on special occasions such as festivals and marriage ceremony.<br>
+                    <center><img src="../images/vazhai.jpg" class="img-thumbnail"  style="width: 320px; height: 250px;"></center>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <center><img src="../images/gandhifood.png" class="img-thumbnail"></center>
+              </div>
+      </div>
+        <center><p style="font-size: 30px; font-family: cursive; color: lightgoldenrodyellow;">The Laughter is brightest<br>
+          where food is the best
+        </p></center>
+        </div>
+        <footer class="blog-footer">
+            <p>
+              <a href="#">Back to top</a>
+            </p>
+          </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    </body>
+</html>

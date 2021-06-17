@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        body{
+		background-color: #25274d;
+	}
+	.contact{
+		padding: 3%;
+		height: 400px;
+	}
+	.col-md-3{
+		background: #4e54c2;
+		padding: 4%;
+		border-top-left-radius: 0.5rem;
+		border-bottom-left-radius: 0.5rem;
+	}
+	.contact-info{
+		margin-top:10%;
+	}
+	.contact-info img{
+		margin-bottom: 15%;
+	}
+	.contact-info h2{
+		margin-bottom: 10%;
+	}
+	.col-md-9{
+		background: #fff;
+		padding: 3%;
+		border-top-right-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+	}
+	.contact-form label{
+		font-weight:600;
+	}
+	.contact-form button{
+		background: #25274d;
+		color: #fff;
+		font-weight: 600;
+		width: 25%;
+	}
+	.contact-form button:focus{
+		box-shadow:black;
+	}
+    </style>
+    <script>
+        function validate_phone_number( number )
+          {
+              var phone_format = /^[6-9][0-9]{9}$/;
+              if( number.match( phone_format ) )
+            {
+                return true;
+            }
+            else
+            {
+                alert("Phone number not a match");
+                return false;
+            }
+          }
+        function validate_pin_code( pincode )
+        {
+          var pincode_format = /[6][0-9]{5}$/;
+          if(pincode.match( pincode_format))
+          {
+            return true;
+          }
+          else
+          {
+            alert("Pincode is incorrect");
+            return false;
+          }
+        }
+        function validateForm()
+        {
+          var name=document.myform.name.value;
+          var email=document.myform.email.value;
+          var a=document.myform.inputCity.value;
+          var num=document.myform.phone.value;
+          var code=document.myform.inputPincode.value;
+          var alphaexp=/^[a-zA-Z\s]+$/;
+          var mailExp = /^([a-z0-9_]+)@([a-z]+).([a-z]{2,5})$/;
+          alert("The selected city is "+a);
+          if (!name.match(alphaexp))
+          {
+          alert("Enter the Name");
+          return false;
+          }
+          if (!email.match(mailExp))
+          {
+          alert("Enter correct email");
+          return false;
+          }
+          if (1)
+                {
+            validate_phone_number( num );
+                }
+          if (1)
+          {
+            validate_pin_code( code );
+          }
+          console.log("checkbox checked is ", form.agree.checked);
+      if(!form.agree.checked)
+      {
+          document.getElementById('agree_chk_error').style.visibility='visible';
+          return false;
+      }
+      else
+      {
+          document.getElementById('agree_chk_error').style.visibility='hidden';
+          return true;
+      }
+        }
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body style="background-image:url(../images/adminpage.jpg); background-size: 100%; background-repeat: no-repeat;">
+      <nav class="navbar navbar-expand-lg navbar bg" style="font-family: Brush Script MT; text-align:center;font-size: 55px; color: lightsalmon;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#Home page.html">
+            <img src="../images/navbar.jpg" alt="" width="100px" height="70" class="d-inline-block align-top" style="background-color: blue;"></img>
+          </a>
+          Ethnic foods
+          <div class="collapse navbar-collapse" id="navbarNav"  style="float: right; width: 430px; font-size: 100%; display: inline; padding-left: 70px;">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="btn btn-outline-success" href="#Home page.html" role="button" style="padding: 5px; font-size: 20px;">Home</a>&nbsp;
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-outline-warning"role="button" href="#districts.html" tabindex="-1" style="padding: 5px; font-size: 20px;">Districts</a>&nbsp;
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-outline-danger" role="button" href="#" tabindex="-1" style="padding: 5px; font-size: 20px;">Join Us</a>&nbsp;
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-outline-dark" role="button" href="#" tabindex="-1" style="padding: 5px; font-size: 20px;">Contacts Us</a>&nbsp;
+              </li>
+            </ul>
+          </div>
+        </div>
+        </nav>
+        <div class="container contact" style="background-color: transparent;">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="contact-info">
+                        <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+                        <h2 style="color: lightyellow;">Admin Only</h2>
+                        <h4>Strictly Admins Only</h4>
+                    </div>
+                </div>
+                <div class="col-md-9" style="background-color: transparent;">
+                    <div class="contact-form">
+                      <form id="form" name="myform" onsubmit="return validateForm()" method="POST" class="row g-3" class="needs-validation" novalidate>
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="name" style="color: lightblue;">Name:</label>
+                          <div class="col-sm-9">          
+                            <input type="text" class="form-control" id="name" placeholder="Enter your Name" name="name" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="email" style="color: lightblue;">Email:</label>
+                          <div class="col-sm-9">
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="addressst" style="color: lightblue;">ADDRESS:</label>
+                          <div class="col-sm-5">
+                            <input type="text" class="form-control" id="addressst" placeholder="Enter your street address" name="addressst" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col-sm-5">
+                            <input type="text" class="form-control" id="locality" placeholder="Enter your locality" name="locality" required>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <label for="inputCity" class="form-label" style="color: lightblue;">City</label>
+                          <select id="inputCity" class="form-select" name="inputCity">
+                            <option selected>Choose</option>
+                            <option>Coimbatore</option>
+                            <option>Chennai</option>
+                            <option>Thiruchirapalli</option>
+                            <option>Madurai</option>
+                            <option>Tirunelveli</option>
+                            <option>Tanjore</option><option>Pudukkotai</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-3">
+                          <label for="inputState" class="form-label" style="color: lightblue;">State</label>
+                          <select id="inputState" class="form-select" name="inputState">
+                            <option selected>Choose</option>
+                            <option>Tamil Nadu</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-3">
+                          <label for="inputPincode" class="form-label" style="color: lightblue;">Pincode</label>
+                          <input type="text" class="form-control" id="inputPincode" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="phone" class="control-label col-sm-2" style="color: lightblue;">Phone number</label>
+                          <div class="col-sm-5">
+                          <input type="number" class="form-control" name="phone" placeholder="Enter your contact number" required>
+                        </div>
+                        </div><br>
+                        <div class="form-group">
+                        <div class="col-sm-5">
+                          <label for="vendor" class="form-label" style="color: lightblue;">City</label>
+                          <select id="vendorname" class="form-select">
+                            <option selected>Choose</option>
+                            <option>XXX</option>
+                            <option>YYY</option>
+                            <option>ZZZ</option>
+                          </select>
+                          </div>
+                        <div class="form-group">        
+                          <div class="col-sm-offset-4 col-sm-12">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </div>
+                        </div>   
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                          <label class="form-check-label" for="flexCheckChecked" style="color: lightblue;">
+                            I accept the given informations are correct
+                          </label>
+                        </div>         
+              </form>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    </body>
+</html>
